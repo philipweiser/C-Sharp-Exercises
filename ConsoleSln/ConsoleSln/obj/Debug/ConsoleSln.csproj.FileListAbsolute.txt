@@ -1,0 +1,6 @@
+C:\Users\Phil\Desktop\Coding\C#\ConsoleSln\ConsoleSln\bin\Debug\ConsoleSln.exe.config
+C:\Users\Phil\Desktop\Coding\C#\ConsoleSln\ConsoleSln\bin\Debug\ConsoleSln.exe
+C:\Users\Phil\Desktop\Coding\C#\ConsoleSln\ConsoleSln\bin\Debug\ConsoleSln.pdb
+C:\Users\Phil\Desktop\Coding\C#\ConsoleSln\ConsoleSln\obj\Debug\ConsoleSln.exe
+C:\Users\Phil\Desktop\Coding\C#\ConsoleSln\ConsoleSln\obj\Debug\ConsoleSln.pdb
+C:\Users\Phil\Desktop\Coding\C#\ConsoleSln\ConsoleSln\obj\Debug\ConsoleSln.csprojResolveAssemblyReference.cache

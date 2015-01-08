@@ -1,0 +1,6 @@
+C:\Users\Phil\Desktop\Coding\C#\C_S_Exercises\C_S_Exercises\bin\C_S_Exercises.dll.config
+C:\Users\Phil\Desktop\Coding\C#\C_S_Exercises\C_S_Exercises\bin\C_S_Exercises.dll
+C:\Users\Phil\Desktop\Coding\C#\C_S_Exercises\C_S_Exercises\bin\C_S_Exercises.pdb
+C:\Users\Phil\Desktop\Coding\C#\C_S_Exercises\C_S_Exercises\obj\Debug\C_S_Exercises.csprojResolveAssemblyReference.cache
+C:\Users\Phil\Desktop\Coding\C#\C_S_Exercises\C_S_Exercises\obj\Debug\C_S_Exercises.dll
+C:\Users\Phil\Desktop\Coding\C#\C_S_Exercises\C_S_Exercises\obj\Debug\C_S_Exercises.pdb
