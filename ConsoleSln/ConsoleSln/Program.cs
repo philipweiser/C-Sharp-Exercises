@@ -26,7 +26,7 @@ namespace ConsoleSln
              {
                  if (foo.Value == count)
                  {
-                     Console.Write("{0}, ", foo.Key);
+                     Console.Write(", {0}", foo.Key);
                  }
                  else if (foo.Value > count)
                  {
@@ -34,7 +34,7 @@ namespace ConsoleSln
                  }
                  else
                  {
-                     Console.Write("\n\nCount = {0}: {1} ", foo.Value, foo.Key);
+                     Console.Write("\n\nCount = {0}: {1}", foo.Value, foo.Key);
                      count = foo.Value;
                  }
              }
@@ -111,13 +111,14 @@ namespace ConsoleSln
         {
             string [] tokens;
             string answer = "";
-            string line = System.IO.File.ReadAllText("C:/Users/Phil/Desktop/Coding/C#/ConsoleSln/ConsoleSln/res/AliceChap1.txt");
+            string line = System.IO.File.ReadAllText("C:/Users/Phil/Documents/GitHub/C-Sharp-Problems/ConsoleSln/ConsoleSln/res/AliceChap1.txt");
             tokens = line.Split(new char[] {' ', ',', '-', '"', '?', '.'});
             foreach (string foo in tokens)
             {
-                if (foo.Length > answer.Length)
+                string temp = foo.Trim('\'');
+                if (temp.Length > answer.Length)
                 {
-                    answer = String.Copy(foo);
+                    answer = String.Copy(temp);
                 }
             }
             return answer;
@@ -126,13 +127,14 @@ namespace ConsoleSln
         {
             string[] tokens;
             List<string> answer = new List<string>();
-            string line = System.IO.File.ReadAllText("C:/Users/Phil/Desktop/Coding/C#/ConsoleSln/ConsoleSln/res/AliceChap1.txt");
+            string line = System.IO.File.ReadAllText("C:/Users/Phil/Documents/GitHub/C-Sharp-Problems/ConsoleSln/ConsoleSln/res/AliceChap1.txt");
             tokens = line.Split(new char[] { ' ', ',', '-', '"', '?', '.' ,'!', ')', '(', '\'', ':', ';'});
             foreach (string foo in tokens)
             {
-                if (foo.Length >= length)
+                string temp = foo.Trim('\'');
+                if (temp.Length >= length)
                 {
-                    answer.Add(String.Copy(foo));
+                    answer.Add(String.Copy(temp));
                 }
             }
             
@@ -142,23 +144,23 @@ namespace ConsoleSln
             //open file, tokenize, if token is unique, create a new key-value pair, set value to 1, else incremement value
             string[] tokens;
             Dictionary<string, int> answer = new Dictionary<string,int>();
-            string line = System.IO.File.ReadAllText("C:/Users/Phil/Desktop/Coding/C#/ConsoleSln/ConsoleSln/res/AliceChap1.txt");
+            string line = System.IO.File.ReadAllText("C:/Users/Phil/Documents/GitHub/C-Sharp-Problems/ConsoleSln/ConsoleSln/res/AliceChap1.txt");
             string extra ="";
             extra = line.Replace(" \'", " ");
             extra = extra.Replace("\' ", " ");
             tokens = line.Split(new char[] { ' ', ',', '-', '"', '?', '.', '!', ')', '(', ':', ';', '\n'});
             foreach (string foo in tokens)
             {
-                foo.Trim('\'');
-                if (foo.Length > 0)
+                string temp = foo.Trim('\'');
+                if (temp.Length > 0)
                 {
-                    if (answer.ContainsKey(foo))
+                    if (answer.ContainsKey(temp))
                     {
-                        answer[foo]++;
+                        answer[temp]++;
                     }
                     else
                     {
-                        answer.Add(foo, 1);
+                        answer.Add(temp, 1);
                     }
                 }
 
@@ -176,7 +178,7 @@ namespace ConsoleSln
         {
             int answer = 0;
             string[] tokens;
-            string line = System.IO.File.ReadAllText("C:/Users/Phil/Desktop/Coding/C#/ConsoleSln/ConsoleSln/res/AliceChap1.txt");
+            string line = System.IO.File.ReadAllText("C:/Users/Phil/Documents/GitHub/C-Sharp-Problems/ConsoleSln/ConsoleSln/res/AliceChap1.txt");
             tokens = line.Split(new char[] { ' ', ',', '-', '"', '?', '.', '!', ')', '(', ':', ';', '\n' });
             foreach (string foo in tokens)
             {
